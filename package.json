@@ -1,22 +1,24 @@
 {
-  "name": "sitmun-js",
+  "name": "@sitmun/sitmun-js",
   "version": "0.0.1",
   "description": "An universal client for the SITMUN public api written in Typescript",
   "main": "./dist/sitmun.cjs",
   "module": "./dist/sitmun.module.js",
   "unpkg": "./dist/sitmun.umd.js",
   "source": "src/sitmun.ts",
-  "repository": "github:sitmun/sitmun-js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sitmun/sitmun-js.git"
+  },
   "scripts": {
     "build": "rm -rf dist && microbundle --tsconfig tsconfig.json",
     "dev": "microbundle watch --tsconfig tsconfig.json",
     "test": "jest"
   },
   "devDependencies": {
-    "@types/jest": "^25.2.1",
-    "jest": "^25.4.0",
-    "microbundle": "^0.13.0",
-    "nock": "^12.0.3"
+    "@types/jest": "^26.0.23",
+    "jest": "^27.0.4",
+    "microbundle": "^0.13.2"
   },
   "keywords": [
     "sitmun",
@@ -33,7 +35,12 @@
     "dist"
   ],
   "dependencies": {
-    "isomorphic-unfetch": "3.1.0",
-    "querystringify": "2.2.0"
-  }
+    "@sitmun/sitmun-js": "^0.0.1",
+    "isomorphic-unfetch": "^3.1.0",
+    "npm-check-updates": "^11.6.0"
+  },
+  "bugs": {
+    "url": "https://github.com/sitmun/sitmun-js/issues"
+  },
+  "homepage": "https://github.com/sitmun/sitmun-js#readme"
 }
