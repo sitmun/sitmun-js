@@ -1,4 +1,4 @@
-const SitmunJs = require('../dist/sitmun')
+const SitmunJs = require('../dist/sitmun.umd')
 
 describe('SitmunJS', () => {
     test('setup', () => {
