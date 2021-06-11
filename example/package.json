@@ -1,0 +1,19 @@
+{
+  "name": "sitmun-js-example",
+  "version": "0.0.2",
+  "description": "Example project with SITMUN JS",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@sitmun/sitmun-js": "file:.."
+  },
+  "author": "Francisco J Lopez-Pellicer <fjlopez@unizar.es>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sitmun/sitmun-js/issues"
+  },
+  "homepage": "https://github.com/sitmun/sitmun-js#readme"
+}

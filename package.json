@@ -1,7 +1,7 @@
 {
   "name": "@sitmun/sitmun-js",
-  "version": "0.0.1",
-  "description": "An universal client for the SITMUN public api written in Typescript",
+  "version": "0.0.2",
+  "description": "A universal client for the SITMUN public api written in Typescript",
   "type": "module",
   "source": "src/sitmun.ts",
   "exports": "./dist/sitmun.modern.js",
