@@ -13,6 +13,7 @@ type Token = {
 class SitmunJS {
     private readonly basePath?: string
     private token?: string
+    private user?: string
 
     constructor(config: Config) {
         this.basePath = config.basePath
@@ -25,14 +26,25 @@ class SitmunJS {
             method: 'post',
             body: JSON.stringify({ username: username, password: password})
         }).then(value => {
-                this.token = value.id_token
-                console.log("success")
+            this.token = value.id_token
+            this.user = username
             }
-        ).catch( _ => this.token = oldToken)
+        ).catch( _ =>
+            this.token = oldToken
+        )
     }
 
     isLogged(): boolean {
         return this.token != null
+    }
+
+    loggedUser(): string {
+        return this.user
+    }
+
+    logout() {
+        this.token = null
+        this.user = null
     }
 
     async workspaceApplication(applicationId: number, territoryId: number): Promise<WorkspaceApplication> {
@@ -50,7 +62,7 @@ class SitmunJS {
         }
 
         if (this.token != null) {
-            headers['Authorization'] = this.token
+            headers['Authorization'] = 'Bearer ' + this.token
         }
 
         const config = {
