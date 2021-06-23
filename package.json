@@ -1,12 +1,13 @@
 {
   "name": "@sitmun/sitmun-js",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A universal client for the SITMUN public api written in Typescript",
   "type": "module",
   "source": "src/sitmun.ts",
   "exports": "./dist/sitmun.modern.js",
-  "main": "./dist/sitmun.cjs",
-  "unpkg": "./dist/sitmun.umd.js",
+  "main": "dist/sitmun.cjs",
+  "unpkg": "dist/sitmun.umd.js",
+  "types": "dist/sitmun.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sitmun/sitmun-js.git"

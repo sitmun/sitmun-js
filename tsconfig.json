@@ -6,6 +6,8 @@
     "node_modules",
     "**/*.test.ts"
   ],
+  "module": "ESNext",
+  "target": "ESNext",
   "compilerOptions": {
     "lib": [
       "dom",
