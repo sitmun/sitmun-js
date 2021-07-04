@@ -1,6 +1,6 @@
 {
   "name": "@sitmun/sitmun-js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A universal client for the SITMUN public api written in Typescript",
   "type": "module",
   "source": "src/sitmun.ts",
@@ -19,8 +19,10 @@
   },
   "devDependencies": {
     "@types/jest": "^26.0.23",
-    "jest": "^27.0.4",
-    "microbundle": "^0.13.2"
+    "jest": "^27.0.6",
+    "microbundle": "^0.13.2",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.2"
   },
   "keywords": [
     "sitmun",

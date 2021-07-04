@@ -1,7 +1,7 @@
 /**
  * Type of grouping of territorial entities.
  *
- * If the user is not logged is the public user.
+ * This type is redundant and should be removed form this part of the API.
  */
 export type TerritoryGroupType = {
     name: string,

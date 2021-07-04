@@ -1,6 +1,7 @@
 import {Envelope} from "./envelope";
 import {TerritoryType} from "./territorytype";
 import {TerritoryGroupType} from "./territorygrouptype";
+import {Point} from "./point";
 
 /**
  * Territorial Entity,
@@ -38,6 +39,14 @@ export type Territory = {
      * Bounding box of the territory.
      */
     extent?: Envelope,
+    /**
+     * Center of the territory.
+     */
+    center?: Point,
+    /**
+     * Default zoom level.
+     */
+    defaultZoomLevel?: number,
     /**
      * Territory typology.
      */
