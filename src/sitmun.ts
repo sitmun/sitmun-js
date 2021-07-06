@@ -1,4 +1,4 @@
-import fetch from 'isomorphic-unfetch'
+import 'isomorphic-unfetch';
 import {Workspace} from "./workspace/workspace";
 import {WorkspaceApplication} from "./workspaceapplication/workspaceapplication";
 import {Configuration} from "./fixture/configuration";

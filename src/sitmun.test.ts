@@ -61,6 +61,7 @@ describe('SitmunJS', () => {
     })
 
     test('request workspace application', async () => {
+        jest.setTimeout(20000)
         const SitmunJsClient = new SitmunJs({ basePath: 'https://sitmun-backend-core.herokuapp.com/' })
         await SitmunJsClient.workspaceApplication(1, 41).then((data) => {
             expect(data.roles.length).toBe(1)

@@ -1,6 +1,6 @@
 {
   "name": "@sitmun/sitmun-js",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A universal client for the SITMUN public api written in Typescript",
   "type": "module",
   "source": "src/sitmun.ts",
@@ -39,8 +39,8 @@
     "dist"
   ],
   "dependencies": {
-    "isomorphic-unfetch": "^3.1.0",
-    "npm-check-updates": "^11.6.0"
+    "unfetch": "^4.2.0",
+    "isomorphic-unfetch": "^3.1.0"
   },
   "bugs": {
     "url": "https://github.com/sitmun/sitmun-js/issues"
